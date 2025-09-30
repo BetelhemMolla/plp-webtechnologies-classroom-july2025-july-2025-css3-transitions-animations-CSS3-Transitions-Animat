@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS & JS Animation Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Part 1: CSS Animations -->
+  <header>
+    <h1 class="fade-in">Welcome to My Interactive Page 🎉</h1>
+    <p>Hover, click, and play with animations below!</p>
+  </header>
+
+  <!-- Button Hover Effect -->
+  <section>
+    <h2>Part 1: CSS3 Transitions</h2>
+    <button class="animated-btn">Hover Me!</button>
+  </section>
+
+  <!-- Animated Box Controlled by JavaScript -->
+  <section>
+    <h2>Part 2 & 3: JS Functions + Animations</h2>
+    <div class="box" id="animatedBox"></div>
+    <button onclick="triggerBoxAnimation('slide')">Slide Box</button>
+    <button onclick="triggerBoxAnimation('spin')">Spin Box</button>
+    <button onclick="resetBox()">Reset</button>
+  </section>
+
+  <!-- Card Flip -->
+  <section>
+    <h2>Card Flip Animation</h2>
+    <div class="card" id="flipCard">
+      <div class="card-inner">
+        <div class="card-front">Front</div>
+        <div class="card-back">Back</div>
+      </div>
+    </div>
+    <button onclick="flipCard()">Flip Card</button>
+  </section>
+
+  <!-- Scope & Function Demo -->
+  <section>
+    <h2>Scope and Return Value Demo</h2>
+    <p id="scopeResult"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
